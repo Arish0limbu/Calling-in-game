@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="bg-video" autoplay loop muted>
+        <source src="default.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <header>
+        <h1 class="title">🎮 Choose Your Battle! 🚀</h1>
+        <p class="subtitle">Pick a game and watch a short preview before jumping in!</p>
+    </header>
+
+    <section id="game-section" class="container">
+        <h2>Select Your Game</h2>
+        <div class="buttons">
+            <button class="game-btn" onclick="openGame('coc')">
+                <img src="coc-icon.png" alt="COC">
+                Clash of Clans
+            </button>
+            <button class="game-btn" onclick="openGame('mlbb')">
+                <img src="mlbb-icon.png" alt="MLBB">
+                Mobile Legends
+            </button>
+            <button class="game-btn" onclick="openGame('freefire')">
+                <img src="freefire-icon.png" alt="Free Fire">
+                Free Fire
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+      </html>
